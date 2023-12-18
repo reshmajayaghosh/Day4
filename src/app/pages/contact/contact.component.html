@@ -1,0 +1,70 @@
+
+<br><br>
+<h2><B>CONTACT US</B></h2>
+
+<div class="container">
+   
+   <br />
+   <div class="row">
+       <div class="col-md-6">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d491.7231203096402!2d76.5072653!3d9.6137756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062b3d47cb29b9%3A0xb089215f793a5648!2sKottayam%20Medical%20College%20Bypass%20Rd%2C%20Kottayam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1702317746706!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <br />
+       <div class="col-md-6">
+           <form class="my-form">
+               <div class="form-group">
+                   <label for="form-name">Name</label>
+                   <input type="email" class="form-control" id="form-name" placeholder="Name">
+               </div>
+               <div class="form-group">
+                   <label for="form-email">Email Address</label>
+                   <input type="email" class="form-control" id="form-email" placeholder="Email Address">
+               </div>
+               <div class="form-group">
+                   <label for="form-subject">Telephone</label>
+                   <input type="text" class="form-control" id="form-subject" placeholder="Phone">
+               </div>
+               <div class="form-group">
+                   <label for="form-message">Email your Message</label>
+                   <textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+               </div>
+               <button class="btn btn-default" type="submit">Contact Us</button>                
+           </form>
+       </div>
+   </div>
+</div>
+<br><br><br><br>
+<style>
+   .my-form {
+       color: #305896;
+   }
+   .my-form .btn-default {
+       background-color: #305896;
+       color: #fff;
+       border-radius: 0;
+   }
+   .my-form .btn-default:hover {
+       background-color: #4498C6;
+       color: #fff;
+   }
+   .my-form .form-control {
+       border-radius: 0;
+   }
+</style>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+   jQuery(function ($) {
+       // Google Maps setup
+       var googlemap = new google.maps.Map(
+           document.getElementById('googlemap'),
+           {
+               center: new google.maps.LatLng(44.5403, -78.5463),
+               zoom: 8,
+               mapTypeId: google.maps.MapTypeId.ROADMAP
+           }
+       );
+   });
+   
+</script>
+ 

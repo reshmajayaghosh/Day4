@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div id="carouselExample" class="carousel slide">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="../../../assets/images/image2.jpg" class="d-block w-100" height="550px" width="500px" alt="kerala">
+  </div>
+
+</div>
+<br>
+<h3 class="text-center" > ALL DISTRICTS</h3>
+<br>
+<br>
+<p>Kerala has 14 separate districts, each famous for its own set of unique destinations and features. Following is a list of that can be used to gain information on each individual district based on your preference. This is to aid you in the process of gaining more data regarding the areas you would like to visit and plan your trip accordingly.</p>
+<br>
+<br>
+<div class-="container">
+  <div class="row">
+    @for(item of districts ; track item.id){
+      <div class="col">
+        <div class="card" style="width: 18rem; ">
+          <img class="card-img-top" height="200px" src="{{item.image}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{item.title}}</h5>
+            <p class="card-text desc">
+              {{item.description| slice:0:200 }}...
+             </p>
+            <a [routerLink]="['/districts',item.id]" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    }
